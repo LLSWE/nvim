@@ -6,3 +6,14 @@ vim.keymap.set({ "n", "i", "v" }, "<C-Right>", "<End>", { noremap = true, silent
 
 -- Ctrl + Seta Esquerda: vai para o início da linha
 vim.keymap.set({ "n", "i", "v" }, "<C-Left>", "<Home>", { noremap = true, silent = true })
+
+local lspconfig = require("lspconfig")
+
+lspconfig.jsonls.setup({
+  settings = {
+    json = {
+      schemas = require("schemastore").json.schemas(),
+      validate = { enable = true },
+    },
+  },
+})
