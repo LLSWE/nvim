@@ -4,4 +4,7 @@ return {
   { "catppuccin/nvim", name = "catppuccin" },
   { "sainnhe/everforest" },
   { "LazyVim/LazyVim", opts = { colorscheme = "midnight" } },
+  { "rebelot/kanagawa.nvim" },
+  { "kepano/flexoki-neovim" },
+  { "everviolet/nvim" },
 }
