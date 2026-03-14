@@ -7,4 +7,5 @@ return {
   { "rebelot/kanagawa.nvim" },
   { "kepano/flexoki-neovim" },
   { "everviolet/nvim" },
+  { "nyoom-engineering/nyoom.nvim" },
 }
