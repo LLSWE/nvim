@@ -3,7 +3,7 @@ return {
   { "ellisonleao/gruvbox.nvim", config = true, contrast = "hard" },
   { "catppuccin/nvim", name = "catppuccin" },
   { "sainnhe/everforest" },
-  { "LazyVim/LazyVim", opts = { colorscheme = "base16-ayu-dark" } },
+  { "LazyVim/LazyVim", opts = { colorscheme = "vim" } },
   { "rebelot/kanagawa.nvim" },
   { "kepano/flexoki-neovim" },
   { "everviolet/nvim" },
