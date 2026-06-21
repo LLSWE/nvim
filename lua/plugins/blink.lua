@@ -8,7 +8,13 @@ return {
 		}
 	},
 
-	opts = {},
+	opts = {
+		keymap = {
+			preset = "default",
+
+			["<CR>"] = { "accept", "fallback" },
+		},
+	},
 
 	build = function()
 		require("blink.cmp").build():pwait()
