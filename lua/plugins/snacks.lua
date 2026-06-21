@@ -3,7 +3,11 @@ return {
 	module = "snacks",
 	opts = {
 		dashboard = require("ui.dashboard"),
-		explorer = { enabled = true },
-		picker = { enabled = true }
+		explorer = require("ui.explorer"),
+		picker = {
+			enabled = true,
+			hidden = true,
+			ignored = true,
+		}
 	},
 }
