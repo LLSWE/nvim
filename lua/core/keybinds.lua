@@ -25,3 +25,8 @@ end, {
 -- Telescope
 local builtin = require("telescope.builtin")
 map("n", "<Space><Space>", builtin.find_files, { desc = "Telescope find files", })
+
+-- Explorer
+map("n", "<leader>e", function()
+	require("snacks").picker.explorer()
+end, { desc = "Opens the explorer" })
