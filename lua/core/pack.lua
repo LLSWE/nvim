@@ -37,8 +37,16 @@ local function setup(spec)
 		end
 	end
 
-	if spec.module and spec.opts then
-		require(spec.module).setup(spec.opts)
+	if spec.module then
+		local ok, plugin = pcall(require, spec.module)
+
+		if ok and type(plugin.setup) == "function" then
+			plugin.setup(spec.opts or {})
+		end
+	end
+
+	if spec.config then
+		spec.config()
 	end
 end
 

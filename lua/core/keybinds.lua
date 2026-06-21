@@ -30,3 +30,8 @@ map("n", "<Space><Space>", builtin.find_files, { desc = "Telescope find files", 
 map("n", "<leader>e", function()
 	require("snacks").picker.explorer()
 end, { desc = "Opens the explorer" })
+
+-- Undo tree
+map("n", "<leader>u", function()
+	require("undotree").toggle()
+end, { desc = "Undo Tree Toggle" })
