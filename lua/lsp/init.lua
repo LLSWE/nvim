@@ -8,6 +8,7 @@ for name, type in vim.fs.dir(lsp_dir) do
 		local module = "lsp." .. name:gsub("%.lua$", "")
 
 		local spec = require(module)
+		vim.lsp.inlay_hint.enable(true)
 
 		vim.lsp.config(spec.name, spec)
 		vim.lsp.enable(spec.name)

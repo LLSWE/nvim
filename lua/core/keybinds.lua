@@ -5,6 +5,12 @@ map({ "n", "i" }, "<C-Left>", "<Home>", {
 	desc = "Início da linha",
 })
 
+-- Window
+map("n", "<C-h>", "<cmd>vertical resize -2<CR>", { desc = "Resize left" })
+map("n", "<C-l>", "<cmd>vertical resize +2<CR>", { desc = "Resize right" })
+map("n", "<C-k>", "<cmd>resize -2<CR>", { desc = "Resize up" })
+map("n", "<C-j>", "<cmd>resize +2<CR>", { desc = "Resize down" })
+
 map({ "n", "i" }, "<C-Right>", "<End>", {
 	desc = "Fim da linha",
 })
@@ -35,3 +41,9 @@ end, { desc = "Opens the explorer" })
 map("n", "<leader>u", function()
 	require("undotree").toggle()
 end, { desc = "Undo Tree Toggle" })
+
+
+-- Git
+map("n", "<leader>G", function()
+	vim.cmd("DiffviewOpen")
+end, { desc = "Open Git diff view" })
