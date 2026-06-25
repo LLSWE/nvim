@@ -34,6 +34,9 @@ local telescope = require("telescope.builtin")
 map("n", "<Space><Space>", telescope.find_files, { desc = "Telescope find files", })
 map("n", "gd", telescope.lsp_definitions, { desc = "Go to Definition", })
 map("n", "gr", telescope.lsp_references, { desc = "References", })
+map("n", "<leader>/", telescope.live_grep, {
+    desc = " Global Grep"
+})
 
 -- Explorer
 map("n", "<leader>e", function()
