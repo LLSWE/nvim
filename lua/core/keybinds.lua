@@ -43,6 +43,10 @@ map("n", "<leader>e", function()
     require("snacks").picker.explorer()
 end, { desc = "Opens the explorer" })
 
+map("n", "X", function()
+    require("snacks").picker.actions.cut()
+end)
+
 -- Undo tree
 map("n", "<leader>u", function()
     require("undotree").toggle()
