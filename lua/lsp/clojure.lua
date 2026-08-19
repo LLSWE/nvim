@@ -3,7 +3,10 @@ return {
     cmd = {
         "clojure-lsp"
     },
-    filetypes = { "clojure", "edn" },
+    filetypes = { "clojure",
+        "clojurescript",
+        "clojurec",
+        "edn", },
 
     root_markers = {
         "deps.edn",
