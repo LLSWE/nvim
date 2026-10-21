@@ -2,6 +2,9 @@ return {
     repo = "folke/snacks.nvim",
     module = "snacks",
     opts = {
+        image = {
+            enabled = true,
+        },
         dashboard = require("ui.dashboard"),
         explorer = require("ui.explorer"),
         picker = {
